@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <script>
+        // let a=21;
+        // console.log('this is my first web page')
+        // console.log('the value of a is' +a)
+        // a=22;
+        // console.log('the modified value of a is' +a )
+        //let str1="Nikhil";
+        //let str2="Kumar";
+        //  console.log(str1 + str2)
+        //let a1=22;
+        // let a2=23;
+        //  const person={name:'Nikhil', age:21, subject:'Android'}
+        // console.log("the name of the person is  "+person.name);
+        //              console.log("the age of the person is  "+person.age);
+        //              console.log("the subject of the person is  "+person.subject);
+        //              console.log('the type of str1 is '+typeof(str1));
+        //              console.log('the type of a1 is '+typeof(a1));
+        //              console.log('the type of person is '+typeof(person));
+
+        // const Numbers=[1,2,3,4,5];
+        // //for(i=0;i<5; i++)
+        // //console.log(Numbers[i]);
+        // Numbers.forEach(function(n){
+
+        // console.log(n)
+
+        // })  
+        // function squre(n){
+        //     return n*n;
+        // }
+        // let a=5;
+        // console.log(`the squre of ${a} is ${squre(a)}`)
+
+        function isPrime(n) {
+            let prime = true;
+            for (i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    prime = false;
+                    break
+                }
+            }
+            return prime;
+        }
+        // let a=5;
+        // console.log(`the number of ${a} is prime ??? ${isPrime(a)}`)
+        str = '';
+
+        for (j = 2; j <= 100; j++) {
+            if (isPrime(j))
+                str = str + j + ' ';
+        }
+        console.log(str);
+    </script>
+</head>
+
+<body>
+    Hello Master Developer
+</body>
+
+</html>

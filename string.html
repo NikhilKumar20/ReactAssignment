@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script>
+        let str = ""
+        console.log(str.length);
+        console.log(str.substring(2, 5));
+        console.log(str.replace('i', 'k'));
+        console.log(str.toUpperCase());
+        console.log(str.toLocaleLowerCase());
+        console.log(str.indexOf(' '))
+        function initCap(str) {
+            return str.substring(0, 1).toUpperCase() + str.substring(1, str.length).toLowerCase()
+        }
+        console.log(initCap('nikhil'));
+
+        function capName(str) {
+            return str.substring(0, 1).toUpperCase() + '.' + ' ' + str.substring(str.indexOf(' ') + 1,
+                str.length).toLowerCase()
+        }
+
+        console.log(capName('Amit Kumar'));
+    </script>
+</head>
+
+<body>
+    Hello Master Developer
+</body>
+
+</html>
